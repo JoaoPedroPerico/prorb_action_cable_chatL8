@@ -30,4 +30,38 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password:  "Password"
+        remember_me: "Remmember me"
+        password_confirmation: "Password confirmation"
+  layouts:
+    application:
+      login: "Log in"
+      logout: "Log out"
+  site:
+    index:
+      sendButton: "Send"
+  devise:
+    passwords:
+      new: 
+        newPasswordHeader: "Forgot your password?"
+        buttonNewPassword: "Send Password Reset Info"
+    registrations:
+      new:
+        newUserHeader: "Sign up"
+        buttonNewUser: "Sign up"
+        newUserPassHint: "%{number} characters minimum"
+    sessions:
+      new:
+        newSessionHeader: "Log in"
+        buttonNewSession: "Log in"
+    shared:
+      links:
+        linksLogIn: "Log in"
+        linksForgotPassword: "Forgot Password"
+        linksSignUp: "Sign up"
+      form_footer:
+        formFooter: "©2019 Acme Corp. All rights reserved."

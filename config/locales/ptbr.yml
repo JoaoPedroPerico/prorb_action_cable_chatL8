@@ -1,0 +1,44 @@
+ptbr:
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password:  "Senha"
+        remember_me: "Lembre me"
+        password_confirmation: "Confirme a senha"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "está vazio"
+            password:
+              blank: "está vazio"
+  layouts:
+    application:
+      login: "Entrar"
+      logout: "Sair"
+  site:
+    index:
+      sendButton: "Enviar"
+  devise:
+    passwords:
+      new: 
+        newPasswordHeader: "Esqueceu a senha?"
+        buttonNewPassword: "Recuperar senha"
+    registrations:
+      new:
+        newUserHeader: "Cadastrar-se"
+        buttonNewUser: "Cadastrar-se"
+        newUserPassHint: "Mínimo de digitos: %{number}"
+    sessions:
+      new:
+        newSessionHeader: "Entrar"
+        buttonNewSession: "Entrar"
+    shared:
+      links:
+        linksLogIn: "Entrar"
+        linksForgotPassword: "Esqueci a senha"
+        linksSignUp: "Cadastrar-se"
+      form_footer:
+        formFooter: "©2019 Acme Corp. Todos os direitos reservados."    

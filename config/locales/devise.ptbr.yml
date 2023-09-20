@@ -1,0 +1,65 @@
+# Additional translations at https://github.com/heartcombo/devise/wiki/I18n
+
+ptbr:
+  devise:
+    confirmations:
+      confirmed: "Email confirmado com sucesso."
+      send_instructions: "Confira seu email para receber as instruções de confirmação."
+      send_paranoid_instructions: "Email já cadastrado, você recebera um email com instruções em breve."
+    failure:
+      already_authenticated: "Você já esta conectado."
+      inactive: "Conta não ativa."
+      invalid: "%{authentication_keys} ou senha inválidos."
+      locked: "Conta travada."
+      last_attempt: "Você tem mais uma tentativa."
+      not_found_in_database: "%{authentication_keys} ou senha inválidos."
+      timeout: "Sua sessão expirou. Entre novamente."
+      unauthenticated: "Você precisa entrar para continuar."
+      unconfirmed: "Você precisa confirmar seu email."
+    mailer:
+      confirmation_instructions:
+        subject: "Instruções de confirmação"
+      reset_password_instructions:
+        subject: "Instruções para alterar senha"
+      unlock_instructions:
+        subject: "Instruções para destravar"
+      email_changed:
+        subject: "Email alterado"
+      password_change:
+        subject: "Senha alterada"
+    omniauth_callbacks:
+      failure: "Não foi possível autenticar %{kind} por \"%{reason}\"."
+      success: "Autenticado com sucesso por %{kind}."
+    passwords:
+      no_token: "Você não pode acessar esta página sem receber um e-mail de redefinição de senha. Se você recebeu um e-mail de redefinição de senha, certifique-se de usar o URL completo fornecido."
+      send_instructions: "Você recebera um email de instruções em breve."
+      send_paranoid_instructions: "Email já cadastrado, você reccebera um email para recuperação."
+      updated: "Senha alterada. Você está conectado."
+      updated_not_active: "Senha alterada com sucesso."
+    registrations:
+      destroyed: "Conta cancelada. Esperamos ve-lo novamente."
+      signed_up: "Bem vindo! Conectado com sucesso."
+      signed_up_but_inactive: "Conectado com sucesso. Sua conta não esta ativada."
+      signed_up_but_locked: "Conectado com sucesso. Sua conta está travada."
+      signed_up_but_unconfirmed: "Link de confirmação enviado no email. Ative sua conta."
+      update_needs_confirmation: "Conta atualizada, verifique seu email. Faça a confirmação via email."
+      updated: "Conta atualizada."
+      updated_but_not_signed_in: "Conta atualizada, entre novamente com sua nova senha."
+    sessions:
+      signed_in: "Conctado com sucesso."
+      signed_out: "Desconectado com sucesso."
+      already_signed_out: "Desconectado com sucesso."
+    unlocks:
+      send_instructions: "Confira o email para instruções de desbloqueio."
+      send_paranoid_instructions: "Conta já existe, você recebera um email de desbloqueio."
+      unlocked: "Conta desbloqueda. Agora você pode conectar-se."
+  errors:
+    messages:
+      already_confirmed: "Confirmação já realizada"
+      confirmation_period_expired: "Prazo de confirmação %{period}, faça uma nova requisição"
+      expired: "Prazo expirado, faça uma nova requisição"
+      not_found: "Não encontrado"
+      not_locked: "Não esta travado"
+      not_saved:
+        one: "1 erro impediu %{resource} de ser salvo:"
+        other: "%{count} erros proibiram %{resource} de serem salvos:"
