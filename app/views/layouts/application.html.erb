@@ -24,13 +24,13 @@
       <!-- navigation -->
       <nav class="nav">
         <ul class="flex items-center">
-          <li class="p-4 cursor-pointer">
-            <%= link_to t(".english"), root_path(locale: :en), class: "button" %>
-          </li>
-          <li class="p-4 cursor-pointer">
-            <%= link_to t(".português"), root_path(locale: :ptbr), class: "button" %>
-          </li>
           <% if signed_in? %>
+            <li class="p-4 cursor-pointer">
+              <%= button_to t(".english"), changeLanguage_path, class: "button", method: :put, params: {language: "en"} %>
+            </li>
+            <li class="p-4 cursor-pointer">
+              <%= button_to t(".português"), changeLanguage_path, class: "button", method: :put, params: {language: "ptbr"} %>
+            </li>
             <li class="p-4 text-slate-300">
               <%= current_user.email %>
             </li>
@@ -38,6 +38,12 @@
               <%= button_to translate(".logout"), destroy_user_session_path, class: "button", method: :delete %>
             </li>
           <% else %>
+            <li class="p-4 cursor-pointer">
+              <%= link_to t(".english"), root_path(locale: :en), class: "button" %>
+            </li>
+            <li class="p-4 cursor-pointer">
+              <%= link_to t(".português"), root_path(locale: :ptbr), class: "button" %>
+            </li>
             <li class="p-4 cursor-pointer">
               <%= link_to translate(".login"), new_user_session_path, class: "button" %>
             </li>
